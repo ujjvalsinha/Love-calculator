@@ -29,8 +29,6 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround, 
           children: [
-
-            
             //image
             Image(
               fit: BoxFit.cover,
@@ -71,7 +69,7 @@ class _HomePageState extends State<HomePage> {
               width: MediaQuery.of(context).size.width * 0.7,
               decoration: BoxDecoration(
                   color: Colors.red, borderRadius: BorderRadius.circular(8.0)),
-              child: FlatButton(
+              child: MaterialButton(
                   textColor: Colors.white,
                   child: isPressed ? Text("Try Agin") : Text("Calculate"),
                   onPressed: () {
